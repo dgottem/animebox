@@ -1,7 +1,9 @@
 #top-header {
-    background-color: #020002;
+    background-color: #1c1b1c;
     display: inline-block;
     position: fixed;
+    width: 100%;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,.8);
 }
 
 #top-header {
