@@ -3,3 +3,8 @@ body {
     font-family: Nunito, Archivo, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: white;
 }
+
+#prev,
+#next {
+    border: 1px solid white;
+}
