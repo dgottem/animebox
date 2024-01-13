@@ -71,6 +71,7 @@
   margin: 10px;
   border-radius: 20px;
   transition: 0.5s;
+  border: 1px solid black;
 }
 
 .slider .dots li.active {
