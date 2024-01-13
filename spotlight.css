@@ -1,5 +1,5 @@
 #spotlight {
-  background-color: black;
+  background-color: #292729;
   display: inline-block;
   width: 100%;
 }
@@ -7,8 +7,9 @@
 .slider {
   font-family: monospace;
   width: 1300px;
-  max-width: 100vw;
+  max-width: 100%;
   height: 700px;
+  max-height: 100%;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -27,7 +28,7 @@
 .slider .list img {
   width: 1300px;
   max-width: 100vw;
-  height: 100%;
+  height: 700px;
   object-fit: cover;
 }
 
