@@ -4,18 +4,15 @@
   width: 100%;
 }
 
-.slider {
-  font-family: monospace;
+.slider{
   width: 1300px;
   max-width: 100%;
   height: 700px;
-  max-height: 100%;
   margin: auto;
   position: relative;
   overflow: hidden;
 }
-
-.slider .list {
+.slider .list{
   position: absolute;
   width: max-content;
   height: 100%;
@@ -24,15 +21,13 @@
   display: flex;
   transition: 1s;
 }
-
-.slider .list img {
+.slider .list img{
   width: 1300px;
   max-width: 100vw;
-  height: 700px;
+  height: 100%;
   object-fit: cover;
 }
-
-.slider .buttons {
+.slider .buttons{
   position: absolute;
   top: 45%;
   left: 5%;
@@ -40,47 +35,42 @@
   display: flex;
   justify-content: space-between;
 }
-
-.slider .buttons button {
+.slider .buttons button{
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: black;
-  color: #fff;
+  color: white;
   border: none;
   font-family: monospace;
   font-weight: bold;
 }
-
-.slider .dots {
+.slider .dots{
   position: absolute;
   bottom: 10px;
   left: 0;
-  color: #fff;
+  color: white;
   width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
 }
-
-.slider .dots li {
+.slider .dots li{
   list-style: none;
   width: 10px;
   height: 10px;
-  background-color: #fff;
+  background-color: white;
   margin: 10px;
+  border: 1px solid black;
   border-radius: 20px;
   transition: 0.5s;
-  border: 1px solid black;
 }
-
-.slider .dots li.active {
+.slider .dots li.active{
   width: 30px;
 }
-
-@media screen and (max-width: 768px) {
-  .slider {
-    height: 400px;
+@media screen and (max-width: 768px){
+  .slider{
+      height: 400px;
   }
 }
