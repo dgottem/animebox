@@ -1,3 +1,3 @@
-This is one of many projects I will be building.
+This is my attempt at making an anime website.
 
 Status: Unfinished
