@@ -1,3 +1,3 @@
-This repository will contain projects I will use to build my portfolio.
+This is one of many projects I will be building.
 
-Time is of the essence for this rookie.
+Status: Unfinished
