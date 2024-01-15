@@ -2,6 +2,8 @@
   background-color: #292729;
   display: inline-block;
   width: 100%;
+  position: relative;
+  padding-bottom: 30px;
 }
 
 .slider{
@@ -45,32 +47,56 @@
   font-family: monospace;
   font-weight: bold;
 }
-.slider .dots{
+
+.dots {
   position: absolute;
   bottom: 10px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   color: white;
-  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
-.slider .dots li{
+
+.dots li {
   list-style: none;
   width: 10px;
   height: 10px;
   background-color: white;
-  margin: 10px;
+  margin: 0 5px; /* Adjust the margin for spacing between dots */
   border: 1px solid black;
   border-radius: 20px;
   transition: 0.5s;
 }
-.slider .dots li.active{
+
+.dots li.active {
   width: 30px;
 }
+
 @media screen and (max-width: 768px){
   .slider{
       height: 400px;
   }
+}
+
+.slider .item {
+  position: relative;
+  text-align: center; /* Center text within the item */
+}
+
+.slider .caption {
+  position: absolute;
+  bottom: 0; /* Position the caption at the bottom of the item */
+  left: 0; /* Align the caption to the left of the item */
+  width: 100%; /* Make the background span the full width */
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the background color and transparency */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
 }
