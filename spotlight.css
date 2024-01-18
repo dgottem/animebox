@@ -6,15 +6,16 @@
   padding-bottom: 30px;
 }
 
-.slider{
+.slider {
   width: 1300px;
   max-width: 100%;
-  height: 700px;
-  margin: auto;
+  height: 550px;
   position: relative;
   overflow: hidden;
+  display: inline-block;
 }
-.slider .list{
+
+.slider .list {
   position: absolute;
   width: max-content;
   height: 100%;
@@ -23,13 +24,17 @@
   display: flex;
   transition: 1s;
 }
-.slider .list img{
+
+.slider .list img {
   width: 100%;
   max-width: 100vw;
+  min-width:  100%;
   object-fit: cover;
   overflow: hidden;
+  min-height: 100%;
 }
-.slider .buttons{
+
+.slider .buttons {
   position: absolute;
   top: 45%;
   left: 5%;
@@ -37,7 +42,8 @@
   display: flex;
   justify-content: space-between;
 }
-.slider .buttons button{
+
+.slider .buttons button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -66,7 +72,8 @@
   width: 10px;
   height: 10px;
   background-color: white;
-  margin: 0 5px; /* Adjust the margin for spacing between dots */
+  margin: 0 5px;
+  /* Adjust the margin for spacing between dots */
   border: 1px solid black;
   border-radius: 20px;
   transition: 0.5s;
@@ -76,13 +83,13 @@
   width: 30px;
 }
 
-@media screen and (max-width: 768px){
-  .slider{
+@media screen and (max-width: 768px) {
+  .slider {
     height: 235px;
     min-width: 100%;
     margin: auto;
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
   }
 
   .slider .list img {
@@ -95,15 +102,20 @@
 
 .slider .item {
   position: relative;
-  text-align: center; /* Center text within the item */
+  text-align: center;
+  /* Center text within the item */
 }
 
 .slider .caption {
   position: absolute;
-  bottom: 0; /* Position the caption at the bottom of the item */
-  left: 0; /* Align the caption to the left of the item */
-  width: 100%; /* Make the background span the full width */
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust the background color and transparency */
+  bottom: 0;
+  /* Position the caption at the bottom of the item */
+  left: 0;
+  /* Align the caption to the left of the item */
+  width: 100%;
+  /* Make the background span the full width */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Adjust the background color and transparency */
   color: white;
   font-size: 20px;
   font-weight: bold;

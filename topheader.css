@@ -2,6 +2,16 @@
     background-color: black;
     display: inline-block;
     width: 100%;
-    box-shadow: 5px 10px 8px 5px #000000;
+    box-shadow: 5px 10px 10px 12px #000000;
     text-align: center;
+    margin: 0;
+}
+
+#top-head {
+    float: left;
+    width: 200px;
+    height: 40px;
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
