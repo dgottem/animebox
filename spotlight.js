@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let next = document.getElementById('next');
     let prev = document.getElementById('prev');
     let dots = document.querySelectorAll('.dots li'); // Updated the selector for dots
-  
+
     let lengthItems = items.length - 1;
     let active = 0;
   
@@ -42,4 +42,3 @@ document.addEventListener('DOMContentLoaded', function () {
       reloadSlider();
     };
   });
-  

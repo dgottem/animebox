@@ -1,5 +1,5 @@
 #spotlight {
-  background-color: #292729;
+  background-color: black;
   display: inline-block;
   width: 100%;
   position: relative;
@@ -48,7 +48,7 @@
   height: 50px;
   border-radius: 50%;
   background-color: black;
-  color: white;
+  color: purple;
   border: none;
   font-family: monospace;
   font-weight: bold;
@@ -121,5 +121,4 @@
   font-weight: bold;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-radius: 5px;
 }
