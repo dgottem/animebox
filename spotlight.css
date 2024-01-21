@@ -4,6 +4,7 @@
   width: 100%;
   position: relative;
   padding-bottom: 30px;
+  overflow: hidden;
 }
 
 .slider {
@@ -48,10 +49,11 @@
   height: 50px;
   border-radius: 50%;
   background-color: black;
-  color: purple;
+  color: white;
   border: none;
   font-family: monospace;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .dots {
@@ -79,7 +81,7 @@
   transition: 0.5s;
 }
 
-.dots li.active {
+.dots li.active-dot {
   width: 30px;
 }
 
@@ -97,6 +99,17 @@
     min-height: 100%;
     object-fit: cover;
     min-width: 100%;
+  }
+
+  .slider .buttons button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+    color: rgb(141, 10, 255);
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
   }
 }
 

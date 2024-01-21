@@ -14,13 +14,30 @@
   <link rel="stylesheet" href="topheader.css">
   <link rel="stylesheet" href="spotlight.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <script src="Hammer JS/hammer.js"></script>
   <script defer src="spotlight.js"></script>
 </head>
 
 <body>
-  <div id="top-header">
-    <a href="index.html"><img src="logo.png" alt="animebox logo" id="top-head"></a>
-  </div>
+  <header id="top-header">
+    <a href="index.html"><img src="logo.png" alt="animebox logo" id="logo"></a>
+
+    <ul class="navbar">
+      <li><a href="#" class="nav-active">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Donate</a></li>
+    </ul>
+
+    <div class="nav-main">
+      <a href="#" class="user"><i class="ri-user-fill"></i>Login</a><br>
+      <a href="#">Sign Up</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
 
   <div id="spotlight">
     <div class="slider">
@@ -58,7 +75,7 @@
     </div>
 
     <ul class="dots">
-      <li class="active"></li>
+      <li class="active-dot"></li>
       <li></li>
       <li></li>
       <li></li>
