@@ -20,3 +20,31 @@ body {
 a {
     color: white;
 }
+
+.search-box {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: black;
+    justify-content: space-between;
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+}
+
+.s-box {
+    border: 1px solid rgb(141, 10, 255);
+    height: 25px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.ri-search-line {
+    float: left;
+    margin-top: 3px;
+    font-size: large;
+    color: rgb(141, 10, 255);
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
