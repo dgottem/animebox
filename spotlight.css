@@ -1,10 +1,10 @@
 #spotlight {
-  background-color: black;
   display: inline-block;
   width: 100%;
   position: relative;
   padding-bottom: 30px;
   overflow: hidden;
+  background-color: #1B1B1B;
 }
 
 .slider {
@@ -36,10 +36,10 @@
 }
 
 .slider .buttons {
-  position: absolute;
+  position: relative;
   top: 45%;
-  left: 5%;
-  width: 90%;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -47,13 +47,37 @@
 .slider .buttons button {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  background-color: black;
   color: white;
-  border: none;
+  background-color: rgba(255, 252, 252, 0.5);
+  backdrop-filter: blur(5px);
   font-family: monospace;
   font-weight: bold;
   cursor: pointer;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.slider .item {
+  position: relative;
+  text-align: center;
+  /* Center text within the item */
+}
+
+.slider .caption {
+  position: absolute;
+  bottom: 0;
+  /* Position the caption at the bottom of the item */
+  left: 0;
+  /* Align the caption to the left of the item */
+  width: 100%;
+  /* Make the background span the full width */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Adjust the background color and transparency */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .dots {
@@ -104,34 +128,7 @@
   .slider .buttons button {
     width: 25px;
     height: 25px;
-    border-radius: 50%;
-    background-color: black;
-    color: rgb(141, 10, 255);
-    border: none;
     font-family: monospace;
     font-weight: bold;
   }
-}
-
-.slider .item {
-  position: relative;
-  text-align: center;
-  /* Center text within the item */
-}
-
-.slider .caption {
-  position: absolute;
-  bottom: 0;
-  /* Position the caption at the bottom of the item */
-  left: 0;
-  /* Align the caption to the left of the item */
-  width: 100%;
-  /* Make the background span the full width */
-  background-color: rgba(0, 0, 0, 0.7);
-  /* Adjust the background color and transparency */
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
