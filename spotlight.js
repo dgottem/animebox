@@ -42,3 +42,21 @@ document.addEventListener('DOMContentLoaded', function () {
     reloadSlider();
   };
 });
+
+function updateSliderHeight() {
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+  // Set the initial height and calculate additional height based on the screen width
+  var initialHeight = 650;
+  var additionalHeight = Math.floor((screenWidth - 1500) / 100) * 200;
+
+  // Ensure the height doesn't go below the initial height
+  var newHeight = Math.max(initialHeight, initialHeight + additionalHeight);
+
+  // Set the calculated height to the image slider
+  document.getElementById('slider').style.height = newHeight + 'px';
+}
+
+// Call the function on page load and window resize
+window.onload = updateSliderHeight;
+window.onresize = updateSliderHeight;
