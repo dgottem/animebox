@@ -1,5 +1,5 @@
-Due to financial reasons and inadequate storage, this project will be missing one of its fundamental features: videos.
+Due to financial reasons and inadequate storage, this project won't have videos.
 
-Well, that's if I can't find an ad-free video hoster.
+Also, I do not want to embed videos with pop-up ads.
 
 Status: Unfinished
