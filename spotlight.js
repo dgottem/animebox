@@ -46,15 +46,22 @@ document.addEventListener('DOMContentLoaded', function () {
 function updateSliderHeight() {
   var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-  // Set the initial height and calculate additional height based on the screen width
-  var initialHeight = 650;
-  var additionalHeight = Math.floor((screenWidth - 1500) / 100) * 200;
+  // Set the initial height
+  var initialHeight = 550;
 
-  // Ensure the height doesn't go below the initial height
-  var newHeight = Math.max(initialHeight, initialHeight + additionalHeight);
+  // Check if the screen width is greater than or equal to 1500px
+  if (screenWidth >= 1500) {
+    // Calculate the additional height based on the excess width beyond 1500px
+    var excessWidth = screenWidth - 1500;
+    var additionalHeight = Math.floor(excessWidth / 100) * 200;
 
-  // Set the calculated height to the image slider
-  document.getElementById('slider').style.height = newHeight + 'px';
+    // Update the slider height
+    var newHeight = initialHeight + additionalHeight;
+    document.getElementById('slider').style.height = newHeight + 'px';
+  } else {
+    // Reset to the initial height if the screen width is less than 1500px
+    document.getElementById('slider').style.height = initialHeight + 'px';
+  }
 }
 
 // Call the function on page load and window resize
