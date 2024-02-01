@@ -53,13 +53,16 @@ a {
 .top-release {
     background-color: black;
     padding-top: 10px;
+    margin: 0;
 }
 
 .tr-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
     padding: 10px;
+    margin-right: 0;
 }
 
 .tr-item {
@@ -99,5 +102,17 @@ a {
 @media (min-width: 800px) {
     .tr-item {
         flex: 0 1 calc(25% - 10px);
+    }
+}
+
+@media (min-width: 1024px){
+    .tr-item {
+        flex: 0 1 calc(20% - 10px);
+    }
+}
+
+@media (min-width: 1500px){
+    .tr-item {
+        flex: 0 1 calc(17% - 10px);
     }
 }
