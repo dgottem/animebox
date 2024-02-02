@@ -10,26 +10,45 @@
 
   <title>AnimeBox</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="topheader.css">
-  <link rel="stylesheet" href="spotlight.css">
+  <link rel="stylesheet" href="homepage/style.css">
+  <link rel="stylesheet" href="homepage/topheader.css">
+  <link rel="stylesheet" href="homepage/spotlight/spotlight.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-  <script defer src="spotlight.js"></script>
-  <script defer src="topheader.js"></script>
+  <script defer src="homepage/spotlight/spotlight.js"></script>
+  <script defer src="homepage/topheader.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      checkDeviceWidth();
+    });
+
+    window.addEventListener('resize', function () {
+      checkDeviceWidth();
+    });
+
+    function checkDeviceWidth() {
+      var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      var alertShown = localStorage.getItem('alertShown');
+
+      if (deviceWidth >= 2500 && !alertShown) {
+        alert("Suggestion: Due to your device width, zoom in for a better experience");
+        localStorage.setItem('alertShown', 'true');
+      }
+    }
+  </script>
 </head>
 
 <body>
 
   <header id="top-header">
-    <a href="index.html"><img src="logo.png" alt="animebox logo" id="logo"></a>
+    <a href="index.html"><img src="homepage/logo.png" alt="animebox logo" id="logo"></a>
 
     <ul class="navbar">
       <li><a href="index.html" class="nav-active">Home</a></li>
       <li><a href="#">Trending</a></li>
-      <li><a href="#">Newly Updated</a></li>
+      <li><a href="#newly-updated">Newly Updated</a></li>
       <li><a href="#">FAQ</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Donate</a></li>
@@ -49,24 +68,24 @@
     <div class="slider">
       <div class="list">
         <div class="item">
-          <img src="spotlight img/the-eminence-in-shadow.webp" alt="the eminence in shadow">
+          <img src="homepage/spotlight/img/the-eminence-in-shadow.webp" alt="the eminence in shadow">
           <div class="caption">The Eminence In Shadow</div>
         </div>
         <div class="item">
-          <img src="spotlight img/attack-on-titan.jpg" alt="attack on titan">
+          <img src="homepage/spotlight/img/attack-on-titan.jpg" alt="attack on titan">
           <div class="caption">Attack On Titan</div>
         </div>
         <div class="item">
-          <img src="spotlight img/horimiya.jpg" alt="horimiya">
+          <img src="homepage/spotlight/img/horimiya.jpg" alt="horimiya">
           <div class="caption">Horimiya</div>
         </div>
         <div class="item">
-          <img src="spotlight img/rascal-does-not-dream-of-bunny-girl-senpai.jpg"
+          <img src="homepage/spotlight/img/rascal-does-not-dream-of-bunny-girl-senpai.jpg"
             alt="rascal does not dream of bunny girl senpai">
           <div class="caption">Rascal Does Not Dream Of Bunny Girl Senpai</div>
         </div>
         <div class="item">
-          <img src="spotlight img/that-time-i-got-reincarnated-as-a-slime.jpg"
+          <img src="homepage/spotlight/img/that-time-i-got-reincarnated-as-a-slime.jpg"
             alt="that time i got reincarnated as a slime">
           <div class="caption">That Time I Got Reincarnated As A Slime</div>
         </div>
@@ -90,102 +109,112 @@
 
   </div>
 
-  <div class="top-release">
-    <h2 style="padding-left: 10px;">Top Release</h2><br>
+  <div class="release-box">
+    <h2>Top Release</h2><br>
 
     <div class="tr-list">
 
       <div class="tr-item">
-        <img src="top release img/the-eminence-in-shadow.jpg" alt="the-eminence-in-shadow">
+        <img src="homepage/top release/img/the-eminence-in-shadow.jpg" alt="the-eminence-in-shadow">
         <div class="tr-item-text">The Eminence In Shadow</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/attack-on-titan.jpg" alt="attack-on-titan">
+        <img src="homepage/top release/img/attack-on-titan.jpg" alt="attack-on-titan">
         <div class="tr-item-text">Attack On Titan</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/horimiya.jpg" alt="horimiya">
+        <img src="homepage/top release/img/horimiya.jpg" alt="horimiya">
         <div class="tr-item-text">Horimiya</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/rascal-does-not-dream-of-bunny-girl-senpai.jpg"
+        <img src="homepage/top release/img/rascal-does-not-dream-of-bunny-girl-senpai.jpg"
           alt="rascal-does-not-dream-of-bunny-girl-senpai">
         <div class="tr-item-text">Rascal Does Not Dream Of Bunny Girl Senpai</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/that-time-i-got-reincarnated-as-a-slime.jpg"
+        <img src="homepage/top release/img/that-time-i-got-reincarnated-as-a-slime.jpg"
           alt="that-time-i-got-reincarnated-as-a-slime">
         <div class="tr-item-text">That Time I Got Reincarnated As A Slime</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/kaguya-sama-love-is-war.jpg" alt="kaguya-sama-love-is-war">
+        <img src="homepage/top release/img/kaguya-sama-love-is-war.jpg" alt="kaguya-sama-love-is-war">
         <div class="tr-item-text">Kaguya-sama: Love Is War</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/naruto.jpg" alt="naruto">
+        <img src="homepage/top release/img/naruto.jpg" alt="naruto">
         <div class="tr-item-text">Naruto</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/the-misfit-of-demon-king-academy.jpg" alt="the-misfit-of-demon-king-academy">
+        <img src="homepage/top release/img/the-misfit-of-demon-king-academy.jpg" alt="the-misfit-of-demon-king-academy">
         <div class="tr-item-text">The Misfit Of Demon King Academy</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/overlord.webp" alt="overlord">
+        <img src="homepage/top release/img/overlord.webp" alt="overlord">
         <div class="tr-item-text">Overlord</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/tokyo-ghoul.jpg" alt="tokyo-ghoul">
+        <img src="homepage/top release/img/tokyo-ghoul.jpg" alt="tokyo-ghoul">
         <div class="tr-item-text">Tokyo Ghoul</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/date-a-live.jpg" alt="date-a-live">
+        <img src="homepage/top release/img/date-a-live.jpg" alt="date-a-live">
         <div class="tr-item-text">Date A Live</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/one-punch-man.jpg" alt="one-punch-man">
+        <img src="homepage/top release/img/one-punch-man.jpg" alt="one-punch-man">
         <div class="tr-item-text">One Punch Man</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/classroom-of-the-elite.jpg" alt="classroom-of-the-elite">
+        <img src="homepage/top release/img/classroom-of-the-elite.jpg" alt="classroom-of-the-elite">
         <div class="tr-item-text">Classroom Of The Elite</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/my-hero-academia.jpg" alt="my-hero-academia">
+        <img src="homepage/top release/img/my-hero-academia.jpg" alt="my-hero-academia">
         <div class="tr-item-text">My Hero Academia</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/komi-cant-communicate.jpg" alt="komi-cant-communicate" style="transform: scaleX(-1);">
+        <img src="homepage/top release/img/komi-cant-communicate.jpg" alt="komi-cant-communicate" style="transform: scaleX(-1);">
         <div class="tr-item-text">Komi Can't Communicate</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/a-returners-magic-should-be-special.webp" alt="a-returners-magic-should-be-special">
+        <img src="homepage/top release/img/a-returners-magic-should-be-special.webp" alt="a-returners-magic-should-be-special">
         <div class="tr-item-text">A Returner's Magic Should Be Special</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/the-world-god-only-knows.jpg" alt="the-world-god-only-knows">
+        <img src="homepage/top release/img/the-world-god-only-knows.jpg" alt="the-world-god-only-knows">
         <div class="tr-item-text">The World God Only Knows</div>
       </div>
 
       <div class="tr-item">
-        <img src="top release img/the-detective-is-already-dead.jpg" alt="the-detective-is-already-dead">
+        <img src="homepage/top release/img/the-detective-is-already-dead.jpg" alt="the-detective-is-already-dead">
         <div class="tr-item-text">The Detective Is Already Dead</div>
-      </div>  
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/top release/img/the-quintessential-quintuplets.jpg" alt="the-quintessential-quintuplets">
+        <div class="tr-item-text">The Quintessential Quintuplets</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/top release/img/jujutsu-kaisen.jpg" alt="jujutsu-kaisen">
+        <div class="tr-item-text">Jujutsu Kaisen</div>
+      </div>
 
       <!--<div class="tr-item">
         <img src="top release img/" alt="">
@@ -193,8 +222,24 @@
         </div>-->
 
     </div>
+
+    <div class="see-more-release"><button class="see-more-button">See More <i class="ri-arrow-right-line"></i></button>
+    </div>
+
   </div>
 
+  <div class="release-box" id="newly-updated">
+    <h2>Newly Updated</h2>
+
+    <div class="tr-list">
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img" alt="">
+        <div class="tr-item-text"></div>
+      </div>
+
+    </div>
+  </div>
 </body>
 
 </html>

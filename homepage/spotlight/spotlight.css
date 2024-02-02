@@ -1,0 +1,142 @@
+#spotlight {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  padding-bottom: 30px;
+  overflow: hidden;
+  background-color: #1B1B1B;
+}
+
+.slider {
+  width: 100vw;
+  max-width: 100%;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slider .list {
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 1s;
+}
+
+.slider .list img {
+  width: 100vw;
+  max-width: 100vw;
+  min-width:  100%;
+  object-fit: cover;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.slider .buttons {
+  position: relative;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider .buttons button {
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: rgba(255, 252, 252, 0.5);
+  backdrop-filter: blur(5px);
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.slider .item {
+  position: relative;
+  text-align: center;
+  /* Center text within the item */
+}
+
+.slider .caption {
+  position: absolute;
+  bottom: 0;
+  /* Position the caption at the bottom of the item */
+  left: 0;
+  /* Align the caption to the left of the item */
+  width: 100%;
+  /* Make the background span the full width */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Adjust the background color and transparency */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  margin: 0 5px;
+  /* Adjust the margin for spacing between dots */
+  border: 1px solid black;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.dots li.active-dot {
+  width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    height: 235px;
+    min-width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider .list img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    min-width: 100%;
+  }
+
+  .slider .buttons button {
+    width: 25px;
+    height: 25px;
+    font-family: monospace;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1500px){
+  .slider{
+    height: 650px;
+  }
+}
