@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;1,9..40,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -109,37 +109,37 @@ a {
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
     .tr-item {
         flex: 0 1 calc(20% - 10px);
     }
 }
 
-@media (min-width: 1500px){
+@media (min-width: 1500px) {
     .tr-item {
         flex: 0 1 calc(18% - 10px);
     }
 }
 
-@media (min-width: 1800px){
+@media (min-width: 1800px) {
     .tr-item {
         flex: 0 1 calc(14% - 10px);
     }
 }
 
-@media (min-width: 2200px){
+@media (min-width: 2200px) {
     .tr-item {
         flex: 0 1 calc(13% - 10px);
     }
 }
 
-@media (min-width: 2500px){
+@media (min-width: 2500px) {
     .tr-item {
         flex: 0 1 calc(15% - 35px);
     }
 }
 
-@media (min-width: 2800px){
+@media (min-width: 2800px) {
     .tr-item {
         flex: 0 1 calc(15% - 50px);
     }
@@ -162,4 +162,104 @@ a {
 .see-more-button:hover {
     background-color: rgb(141, 10, 255);
     color: white;
+}
+
+.all-time-trending {
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.att-item {
+    display: flex;
+    width: 100%;
+    border-right: 5px solid;
+    border-radius: 5px;
+    height: 100px;
+    max-height: 100px;
+    margin-bottom: 10px;
+}
+
+.att-item h2 {
+    font-family: 'Rowdies', sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    font-size: 70px;
+    min-width: 23%;
+    text-align: center;
+    overflow: hidden;
+    min-height: 100%;
+    padding-bottom: 10px;
+}
+
+.att-item img {
+    min-width: 23%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.att-item p {
+    min-width: 54%;
+    margin-top: 40px;
+    padding-left: 5px;
+    overflow: hidden;
+}
+
+.att-item:nth-of-type(1){
+    border-color: rgb(141, 10, 255);
+}
+
+.att-item:nth-of-type(1) h2{
+    color: black;
+    text-shadow: -1px -1px 0 rgb(141, 10, 255), 1px -1px 0 rgb(141, 10, 255), -1px 1px 0 rgb(141, 10, 255), 1px 1px 0 rgb(141, 10, 255);
+}
+
+.att-item:nth-of-type(2){
+    border-color: crimson;
+}
+
+.att-item:nth-of-type(2) h2{
+    color: black;
+    text-shadow: -1px -1px 0 crimson, 1px -1px 0 crimson, -1px 1px 0 crimson, 1px 1px 0 crimson;
+}
+
+.att-item:nth-of-type(3){
+    border-color: gold;
+}
+
+.att-item:nth-of-type(3) h2{
+    color: black;
+    text-shadow: -1px -1px 0 gold, 1px -1px 0 gold, -1px 1px 0 gold, 1px 1px 0 gold;
+}
+
+.att-item:nth-of-type(4), .att-item:nth-of-type(5), .att-item:nth-of-type(6), .att-item:nth-of-type(7), .att-item:nth-of-type(8), .att-item:nth-of-type(9), .att-item:nth-of-type(10){
+    border-color: gainsboro;
+}
+
+.att-item:nth-of-type(4) h2, .att-item:nth-of-type(5) h2, .att-item:nth-of-type(6) h2, .att-item:nth-of-type(7) h2, .att-item:nth-of-type(8) h2, .att-item:nth-of-type(9) h2, .att-item:nth-of-type(10) h2{
+    color: black;
+    text-shadow: -1px -1px 0 gainsboro, 1px -1px 0 gainsboro, -1px 1px 0 gainsboro, 1px 1px 0 gainsboro;
+}
+
+@media (min-width:1024px) {
+
+    /* Style for the columns */
+    .home-column1 {
+        float: left;
+        width: 70%;
+        box-sizing: border-box;
+    }
+
+    .home-column2 {
+        float: left;
+        width: 30%;
+        box-sizing: border-box;
+    }
+
+    /* Clear the float to prevent issues with following elements */
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 }
