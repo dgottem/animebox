@@ -10,7 +10,7 @@
   <meta property="og:description" content="Watch anime online">
   <meta property="og:image" content="https://dgottem.github.io/animebox/icon.png">
   <meta property="og:url" content="https://dgottem.github.io/animebox">
-  <meta property="og:type" content="video">
+  <meta property="og:type" content="website" content="video">
 
   <link rel="icon" type="image/png" href="icon.png">
 
@@ -26,23 +26,14 @@
   <script defer src="homepage/spotlight/spotlight.js"></script>
   <script defer src="homepage/topheader.js"></script>
   <script>
-    window.addEventListener('load', function () {
-      checkDeviceWidth();
-    });
-
-    window.addEventListener('resize', function () {
-      checkDeviceWidth();
-    });
-
-    function checkDeviceWidth() {
-      var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-      var alertShown = localStorage.getItem('alertShown');
-
-      if (deviceWidth >= 2500 && !alertShown) {
-        alert("Suggestion: Due to your device width, zoom in for a better experience");
-        localStorage.setItem('alertShown', 'true');
+    // Attach the code to the window.onload event
+    window.onload = function() {
+      // Check if the screen width is 2500px or wider
+      if (window.innerWidth >= 2500) {
+        // Display an alert
+        alert("Due to the width of your screen, zoom in for a better experience.");
       }
-    }
+    };
   </script>
 </head>
 
@@ -240,8 +231,78 @@
     <div class="tr-list">
 
       <div class="tr-item">
-        <img src="homepage/newly updated/img" alt="">
-        <div class="tr-item-text"></div>
+        <img src="homepage/newly updated/img/solo-leveling.jpg" alt="solo-leveling">
+        <div class="tr-item-text">Solo Leveling</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img/frieren-beyond-journeys-end.jpg" alt="frieren-beyond-journeys-end">
+        <div class="tr-item-text">Frieren: Beyond Journey's End</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img/the-angel-next-door-spoils-me-rotten.jpg" alt="the-angel-next-door-spoils-me-rotten">
+        <div class="tr-item-text">The Angel Next Door Spoils Me Rotten</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img/cautious-hero-the-hero-who-is-overpowered-but-overly-cautious.jpg" alt="cautious-hero-the-hero-who-is-overpowered-but-overly-cautious">
+        <div class="tr-item-text">Cautious Hero: The Hero Who Is Overpowered But Overly Cautious</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img/mushoku-tensei-jobless-reincarnation.jpg" alt="mushoku-tensei-jobless-reincarnation">
+        <div class="tr-item-text">Mushoku Tensei: Jobless Reincarnation</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img/re-zero-starting-life-in-another-world.jpg" alt="re-zero-starting-life-in-another-world">
+        <div class="tr-item-text">Re:Zero - Starting Life In Another World</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img/konosuba-gods-blessing-on-this-wonderful-world.jpg" alt="konosuba-gods-blessing-on-this-wonderful-world">
+        <div class="tr-item-text">KonoSuba: God's Blessing On This Wonderful World!</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img/miss-kobayashis-dragon-maid.webp" alt="miss-kobayashis-dragon-maid">
+        <div class="tr-item-text">Miss Kobayashi's Dragon Maid</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img/violet-evergarden.jpg" alt="violet-evergarden">
+        <div class="tr-item-text">Violet Evergarden</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img/akame-ga-kill.jpg" alt="akame-ga-kill">
+        <div class="tr-item-text">Akame Ga Kill</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img/sword-art-online.jpg" alt="sword-art-online">
+        <div class="tr-item-text">Sword Art Online</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img/kaichou-wa-maid-sama.jpg" alt="kaichou-wa-maid-sama">
+        <div class="tr-item-text">Kaichou Wa Maid Sama!</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img/the-apothecary-diaries.jpg" alt="the-apothecary-diaries">
+        <div class="tr-item-text">The Apothecary Diaries</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img/the-rising-of-the-shield-hero.webp" alt="the-rising-of-the-shield-hero">
+        <div class="tr-item-text">The Rising Of The Shield Hero</div>
+      </div>
+
+      <div class="tr-item">
+        <img src="homepage/newly updated/img/demon-slayer.jpg" alt="demon-slayer">
+        <div class="tr-item-text">Demon Slayer</div>
       </div>
 
     </div>
