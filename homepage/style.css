@@ -291,6 +291,7 @@ a {
 }
 
 #footer {
+    display: inline-block;
     text-align: center;
     background-color: #333;
     color: #fff;
@@ -298,4 +299,15 @@ a {
     padding: 10px;
     bottom: 0;
     width: 100%;
+}
+
+.dance-gif {
+    width: auto;
+    display: inline-block;
+}
+
+.dance-gif img {
+    width: 1em;
+    height: 100%;
+    object-fit: contain;
 }
