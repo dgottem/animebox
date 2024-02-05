@@ -195,35 +195,29 @@ a {
 
 .att-item {
     border-right: 5px solid;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-bottom: 10px;
-}
-
-.att-item h2 {
-    font-family: 'Oswald', sans-serif;
+    align-items: center;
+    display: flex;
 }
 
 .att-column-1 {
-    float: left;
     width: 10%;
-    box-sizing: border-box;
-    text-align: left;
-    font-size: 30px;
-    margin-top: 30px;
+    font-size: 70px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    z-index: 10;
 }
 
 .att-column-2 {
-    float: left;
     width: 20%;
-    box-sizing: border-box;
+    margin-left: 15px;
+    overflow: hidden;
 }
 
 .att-column-3 {
-    float: left;
     width: 70%;
     text-align: center;
-    box-sizing: border-box;
-    margin-top: 40px;
 }
 
 .clearfix::after {
@@ -259,6 +253,20 @@ a {
     text-shadow: -1px -1px 0 gold, 1px -1px 0 gold, -1px 1px 0 gold, 1px 1px 0 gold;
 }
 
+.att-item:nth-of-type(1),
+.att-item:nth-of-type(2),
+.att-item:nth-of-type(3) {
+    padding-left: 10px;
+    background-color: #111;
+}
+
+.att-item:nth-of-type(1) h2,
+.att-item:nth-of-type(2) h2,
+.att-item:nth-of-type(3) h2 {
+    color: #111;
+}
+
+
 .att-item:nth-of-type(4),
 .att-item:nth-of-type(5),
 .att-item:nth-of-type(6),
@@ -266,7 +274,9 @@ a {
 .att-item:nth-of-type(8),
 .att-item:nth-of-type(9),
 .att-item:nth-of-type(10) {
-    border-color: black;
+    padding-left: 10px;
+    border-color: #111;
+    background-color: #111;
 }
 
 .att-item:nth-of-type(4) h2,
@@ -276,6 +286,16 @@ a {
 .att-item:nth-of-type(8) h2,
 .att-item:nth-of-type(9) h2,
 .att-item:nth-of-type(10) h2 {
-    color: black;
-    text-shadow: -1px -1px 0 darkgray, 1px -1px 0 darkgray, -1px 1px 0 darkgray, 1px 1px 0 darkgray;
+    color: #111;
+    text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
+}
+
+#footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
 }
