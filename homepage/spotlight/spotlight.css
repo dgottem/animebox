@@ -57,6 +57,12 @@
   padding-bottom: 40px;
 }
 
+@media (min-width:1400px) {
+  .slider .buttons {
+    display: none;
+  }
+}
+
 .slider .item {
   position: relative;
   text-align: center;

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let items = document.querySelectorAll('.slider .list .item');
   let next = document.getElementById('next');
   let prev = document.getElementById('prev');
-  let dots = document.querySelectorAll('.dots li'); // Updated the selector for dots
+  let dots = document.querySelectorAll('.dots li');
 
   let lengthItems = items.length - 1;
   let active = 0;
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function reloadSlider() {
     slider.style.left = -items[active].offsetLeft + 'px';
 
-    let last_active_dot = document.querySelector('.dots li.active-dot'); // Updated the selector for last_active_dot
+    let last_active_dot = document.querySelector('.dots li.active-dot');
     last_active_dot.classList.remove('active-dot');
     dots[active].classList.add('active-dot');
 
@@ -41,4 +41,12 @@ document.addEventListener('DOMContentLoaded', function () {
   window.onresize = function (event) {
     reloadSlider();
   };
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowRight") {
+      next.click();
+    } else if (event.key === "ArrowLeft") {
+      prev.click();
+    }
+  });
 });
