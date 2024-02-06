@@ -80,6 +80,8 @@ a {
     margin-bottom: 20px;
     overflow: hidden;
     position: relative;
+    padding-right: 5px;
+    padding-left: 2px;
 }
 
 .tr-item img {
