@@ -92,10 +92,10 @@
     }
 
     .navbar {
-        position: absolute;
+        position: fixed;
         right: -100%;
         /* Initial position off-screen */
-        top: 100%;
+        top: 10%;
         width: 270px;
         height: fit-content;
         /* Adjust as needed */
