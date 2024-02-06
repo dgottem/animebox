@@ -59,13 +59,16 @@ a {
 
 .release-box h2 {
     padding-left: 10px;
+    margin-left: 2.5%;
 }
 
 .tr-list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: left;
+    margin-left: 2.5%;
+    width: 100%;
     padding: 10px;
     margin-right: 0;
 }

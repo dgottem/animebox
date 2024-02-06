@@ -63,12 +63,6 @@
     align-items: center;
 }
 
-.user i {
-    margin-right: 7px;
-
-    color: rgb(141, 10, 255);
-}
-
 .nav-main a:hover {
     color: rgb(141, 10, 255);
 }
