@@ -55,33 +55,29 @@ a {
     background-color: black;
     padding-top: 10px;
     margin: 0;
+    align-items: center;
 }
 
 .release-box h2 {
     padding-left: 10px;
-    margin-left: 2.5%;
 }
 
 .tr-list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: left;
-    margin-left: 2.5%;
-    width: 100%;
+    justify-content: flex-start;
     padding: 10px;
-    margin-right: 0;
 }
 
 .tr-item {
     display: flex;
     box-sizing: border-box;
-    flex: 0 1 calc(50% - 10px);
+    flex: 0 1 calc(50%);
     margin-bottom: 20px;
     overflow: hidden;
     position: relative;
     padding-right: 5px;
-    padding-left: 2px;
+    padding-left: 5px;
 }
 
 .tr-item img {
@@ -105,49 +101,31 @@ a {
 
 @media (min-width: 600px) {
     .tr-item {
-        flex: 0 1 calc(33.333% - 10px);
+        flex: 0 1 calc(33.333%);
     }
 }
 
 @media (min-width: 800px) {
     .tr-item {
-        flex: 0 1 calc(25% - 10px);
+        flex: 0 1 calc(25%);
     }
 }
 
 @media (min-width: 1024px) {
     .tr-item {
-        flex: 0 1 calc(20% - 10px);
+        flex: 0 1 calc(20%);
     }
 }
 
 @media (min-width: 1500px) {
     .tr-item {
-        flex: 0 1 calc(18% - 10px);
-    }
-}
-
-@media (min-width: 1800px) {
-    .tr-item {
-        flex: 0 1 calc(14% - 10px);
-    }
-}
-
-@media (min-width: 2200px) {
-    .tr-item {
-        flex: 0 1 calc(13% - 10px);
-    }
-}
-
-@media (min-width: 2500px) {
-    .tr-item {
-        flex: 0 1 calc(15% - 35px);
+        flex: 0 1 calc(14%);
     }
 }
 
 @media (min-width: 2800px) {
     .tr-item {
-        flex: 0 1 calc(15% - 50px);
+        flex: 0 1 calc(14%);
     }
 }
 

@@ -92,10 +92,10 @@
     }
 
     .navbar {
-        position: fixed;
-        top: 10%;
+        position: absolute;
         right: -100%;
         /* Initial position off-screen */
+        top: 100%;
         width: 270px;
         height: fit-content;
         /* Adjust as needed */
@@ -107,6 +107,7 @@
         border-radius: 10px;
         transition: right 0.5s ease;
         /* Add transition property for smooth sliding effect */
+        border: 1px solid green;
     }
 
     .navbar a {
