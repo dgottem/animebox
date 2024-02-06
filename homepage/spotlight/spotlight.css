@@ -73,7 +73,7 @@
   position: absolute;
   bottom: 0;
   /* Position the caption at the bottom of the item */
-  left: 0;
+  align-items: center;
   /* Align the caption to the left of the item */
   width: 100%;
   /* Make the background span the full width */
@@ -142,7 +142,13 @@
 }
 
 @media (min-width: 1500px){
-  .slider{
+  .slider {
     height: 650px;
+  }
+}
+
+@media (min-width: 1800px){
+  .slider {
+    height: 70vh;
   }
 }
