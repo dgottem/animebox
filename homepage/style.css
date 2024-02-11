@@ -99,6 +99,10 @@ a {
     white-space: nowrap;
 }
 
+#top-release .tr-item:nth-of-type(15) img {
+    transform: scaleX(-1);
+}
+
 @media (min-width: 600px) {
     .tr-item {
         flex: 0 1 calc(33.333%);
@@ -174,6 +178,11 @@ a {
 .all-time-trending {
     padding-left: 10px;
     overflow: hidden;
+}
+
+.att-header {
+    padding-bottom: 20px;
+    padding-top: 10px
 }
 
 .att-item {
