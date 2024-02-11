@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta property="og:title" content="AnimeBox">
@@ -20,21 +20,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
   <link rel="stylesheet" href="homepage/style.css">
-  <link rel="stylesheet" href="homepage/topheader.css">
+  <link rel="stylesheet" href="topheader.css">
   <link rel="stylesheet" href="homepage/spotlight/spotlight.css">
 
   <script defer src="homepage/spotlight/spotlight.js"></script>
-  <script defer src="homepage/topheader.js"></script>
-  <script>
-    // Attach the code to the window.onload event
-    window.onload = function () {
-      // Check if the screen width is 2500px or wider
-      if (window.innerWidth >= 2500) {
-        // Display an alert
-        alert("Due to the width of your screen, zoom in for a better experience.");
-      }
-    };
-  </script>
+  <script defer src="topheader.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -54,7 +45,7 @@
     </ul>
 
     <div class="nav-main">
-      <a href="#" class="user"><img src="icons/user-login.png" style="width: 16.83px; margin-right: 10%;"> Login</a><br>
+      <a href="#" class="user"><img src="icons/user-login.png" alt="login icon"> Login</a><br>
       <a href="#">Sign Up</a>
       <div class="bx bx-menu" id="menu-icon"></div>
     </div>
@@ -102,8 +93,8 @@
 
       <!-- previous and next buttons -->
       <div class="buttons">
-        <button id="prev">&#60;</button>
-        <button id="next">&#62;</button>
+        <button type="button" id="prev">&#60;</button>
+        <button type="button" id="next">&#62;</button>
       </div>
 
     </div>
@@ -120,7 +111,7 @@
 
   <div class="home-column1">
 
-    <div class="release-box top-release">
+    <div class="release-box" id="top-release">
       <h2>Top Release</h2><br>
 
       <div class="tr-list">
@@ -199,8 +190,7 @@
         </div>
 
         <div class="tr-item">
-          <img src="homepage/top release/img/komi-cant-communicate.jpg" alt="komi-cant-communicate"
-            style="transform: scaleX(-1);">
+          <img src="homepage/top release/img/komi-cant-communicate.jpg" alt="komi-cant-communicate">
           <div class="tr-item-text">Komi Can't Communicate</div>
         </div>
 
@@ -230,137 +220,128 @@
           <div class="tr-item-text">Jujutsu Kaisen</div>
         </div>
 
-        <!--<div class="tr-item">
-        <img src="top release img/" alt="">
-        <div class="tr-item-text"></div>
-        </div>-->
-
       </div>
 
-      <div class="see-more-release"><button class="see-more-button">See More <i
+      <div class="see-more-release"><button type="button" class="see-more-button">See More <i
             class="ri-arrow-right-line"></i></button>
       </div>
 
     </div>
 
-    <div class="release-box newly-updated">
+    <div class="release-box" id="newly-updated">
       <h2>Newly Updated</h2>
 
       <div class="tr-list">
 
         <div class="tr-item">
-          <img src="homepage/newly updated/img/solo-leveling.jpg" alt="solo-leveling" >
+          <img src="homepage/newly updated/img/solo-leveling.jpg" alt="solo-leveling">
           <div class="tr-item-text">Solo Leveling</div>
         </div>
 
         <div class="tr-item">
-          <img src="homepage/newly updated/img/frieren-beyond-journeys-end.jpg" alt="frieren-beyond-journeys-end"
-            >
+          <img src="homepage/newly updated/img/frieren-beyond-journeys-end.jpg" alt="frieren-beyond-journeys-end">
           <div class="tr-item-text">Frieren: Beyond Journey's End</div>
         </div>
 
         <div class="tr-item">
           <img src="homepage/newly updated/img/the-angel-next-door-spoils-me-rotten.jpg"
-            alt="the-angel-next-door-spoils-me-rotten" >
+            alt="the-angel-next-door-spoils-me-rotten">
           <div class="tr-item-text">The Angel Next Door Spoils Me Rotten</div>
         </div>
 
         <div class="tr-item">
           <img src="homepage/newly updated/img/cautious-hero-the-hero-who-is-overpowered-but-overly-cautious.jpg"
-            alt="cautious-hero-the-hero-who-is-overpowered-but-overly-cautious" >
+            alt="cautious-hero-the-hero-who-is-overpowered-but-overly-cautious">
           <div class="tr-item-text">Cautious Hero: The Hero Who Is Overpowered But Overly Cautious</div>
         </div>
 
         <div class="tr-item">
           <img src="homepage/newly updated/img/mushoku-tensei-jobless-reincarnation.jpg"
-            alt="mushoku-tensei-jobless-reincarnation" >
+            alt="mushoku-tensei-jobless-reincarnation">
           <div class="tr-item-text">Mushoku Tensei: Jobless Reincarnation</div>
         </div>
 
         <div class="tr-item">
           <img src="homepage/newly updated/img/re-zero-starting-life-in-another-world.jpg"
-            alt="re-zero-starting-life-in-another-world" >
+            alt="re-zero-starting-life-in-another-world">
           <div class="tr-item-text">Re:Zero - Starting Life In Another World</div>
         </div>
 
         <div class="tr-item">
           <img src="homepage/newly updated/img/konosuba-gods-blessing-on-this-wonderful-world.jpg"
-            alt="konosuba-gods-blessing-on-this-wonderful-world" >
+            alt="konosuba-gods-blessing-on-this-wonderful-world">
           <div class="tr-item-text">KonoSuba: God's Blessing On This Wonderful World!</div>
         </div>
 
         <div class="tr-item">
-          <img src="homepage/newly updated/img/miss-kobayashis-dragon-maid.webp" alt="miss-kobayashis-dragon-maid"
-            >
+          <img src="homepage/newly updated/img/miss-kobayashis-dragon-maid.webp" alt="miss-kobayashis-dragon-maid">
           <div class="tr-item-text">Miss Kobayashi's Dragon Maid</div>
         </div>
 
         <div class="tr-item">
-          <img src="homepage/newly updated/img/violet-evergarden.jpg" alt="violet-evergarden" >
+          <img src="homepage/newly updated/img/violet-evergarden.jpg" alt="violet-evergarden">
           <div class="tr-item-text">Violet Evergarden</div>
         </div>
 
         <div class="tr-item">
-          <img src="homepage/newly updated/img/akame-ga-kill.jpg" alt="akame-ga-kill" >
+          <img src="homepage/newly updated/img/akame-ga-kill.jpg" alt="akame-ga-kill">
           <div class="tr-item-text">Akame Ga Kill</div>
         </div>
 
         <div class="tr-item">
-          <img src="homepage/newly updated/img/sword-art-online.jpg" alt="sword-art-online" >
+          <img src="homepage/newly updated/img/sword-art-online.jpg" alt="sword-art-online">
           <div class="tr-item-text">Sword Art Online</div>
         </div>
 
         <div class="tr-item">
-          <img src="homepage/newly updated/img/maid-sama.jpg" alt="maid-sama" >
+          <img src="homepage/newly updated/img/maid-sama.jpg" alt="maid-sama">
           <div class="tr-item-text">Maid Sama!</div>
         </div>
 
         <div class="tr-item">
-          <img src="homepage/newly updated/img/the-apothecary-diaries.jpg" alt="the-apothecary-diaries" >
+          <img src="homepage/newly updated/img/the-apothecary-diaries.jpg" alt="the-apothecary-diaries">
           <div class="tr-item-text">The Apothecary Diaries</div>
         </div>
 
         <div class="tr-item">
-          <img src="homepage/newly updated/img/the-rising-of-the-shield-hero.webp" alt="the-rising-of-the-shield-hero"
-            >
+          <img src="homepage/newly updated/img/the-rising-of-the-shield-hero.webp" alt="the-rising-of-the-shield-hero">
           <div class="tr-item-text">The Rising Of The Shield Hero</div>
         </div>
 
         <div class="tr-item">
-          <img src="homepage/newly updated/img/demon-slayer.jpg" alt="demon-slayer" >
+          <img src="homepage/newly updated/img/demon-slayer.jpg" alt="demon-slayer">
           <div class="tr-item-text">Demon Slayer</div>
         </div>
 
         <div class="tr-item">
-          <img src="homepage/newly updated/img/ragna-crimson.webp" alt="ragna-crimson" >
+          <img src="homepage/newly updated/img/ragna-crimson.webp" alt="ragna-crimson">
           <div class="tr-item-text">Ragna Crimson</div>
         </div>
 
         <div class="tr-item">
-          <img src="homepage/newly updated/img/shangri-la-frontier.jpg" alt="shangri-la-frontier" >
+          <img src="homepage/newly updated/img/shangri-la-frontier.jpg" alt="shangri-la-frontier">
           <div class="tr-item-text">Shangri-La Frontier</div>
         </div>
 
         <div class="tr-item">
           <img src="homepage/newly updated/img/zom-100-bucket-list-of-the-dead.jpg"
-            alt="zom-100-bucket-list-of-the-dead" >
+            alt="zom-100-bucket-list-of-the-dead">
           <div class="tr-item-text">Zom 100: Bucket List Of The Dead</div>
         </div>
 
         <div class="tr-item">
-          <img src="homepage/newly updated/img/tales-of-wedding-rings.jpg" alt="tales-of-wedding-rings" >
+          <img src="homepage/newly updated/img/tales-of-wedding-rings.jpg" alt="tales-of-wedding-rings">
           <div class="tr-item-text">Tales Of Wedding Rings</div>
         </div>
 
         <div class="tr-item">
-          <img src="homepage/newly updated/img/mashle-magic-and-muscles.jpg" alt="mashle-magic-and-muscles"
-            >
+          <img src="homepage/newly updated/img/mashle-magic-and-muscles.jpg" alt="mashle-magic-and-muscles">
           <div class="tr-item-text">Mashle: Magic and Muscles</div>
         </div>
 
       </div>
 
-      <div class="see-more-release"><button class="see-more-button">See More <i
+      <div class="see-more-release"><button type="button" class="see-more-button">See More <i
             class="ri-arrow-right-line"></i></button>
       </div>
     </div>
@@ -368,13 +349,13 @@
   </div>
 
   <div class="all-time-trending home-column2">
-    <h2 style="padding-bottom: 20px; padding-top: 10px;">All-Time Trending</h2>
+    <h2 class="att-header">All-Time Trending</h2>
 
     <div class="att-list">
 
       <div class="att-item">
         <h2 class="att-column-1">1</h2>
-        <img src="homepage/all time trending/img/naruto-shippuden.jpg" class="att-column-2" alt="naruto-shippuden" >
+        <img src="homepage/all time trending/img/naruto-shippuden.jpg" class="att-column-2" alt="naruto-shippuden">
         <p class="att-column-3">Naruto: Shippuden</p>
         <div class="clearfix"></div>
       </div>
@@ -383,7 +364,7 @@
       <div class="att-item">
         <h2 class="att-column-1">2</h2>
         <img src="homepage/all time trending/img/the-eminence-in-shadow.jpg" class="att-column-2"
-          alt="the-eminence-in-shadow" >
+          alt="the-eminence-in-shadow">
         <p class="att-column-3">The Eminence In Shadow</p>
         <div class="clearfix"></div>
       </div>
@@ -391,14 +372,14 @@
       <div class="att-item">
         <h2 class="att-column-1">3</h2>
         <img src="homepage/all time trending/img/darling-in-the-franxx.png" class="att-column-2"
-          alt="darling-in-the-franxx" >
+          alt="darling-in-the-franxx">
         <p class="att-column-3">DARLING In The FRANXX</p>
         <div class="clearfix"></div>
       </div>
 
       <div class="att-item">
         <h2 class="att-column-1">4</h2>
-        <img src="homepage/all time trending/img/tokyo-ghoul.jpg" class="att-column-2" alt="tokyo-ghoul" >
+        <img src="homepage/all time trending/img/tokyo-ghoul.jpg" class="att-column-2" alt="tokyo-ghoul">
         <p class="att-column-3">Tokyo Ghoul</p>
         <div class="clearfix"></div>
       </div>
@@ -407,7 +388,7 @@
       <div class="att-item">
         <h2 class="att-column-1">5</h2>
         <img src="homepage/all time trending/img/fullmetal-alchemist.jpg" class="att-column-2"
-          alt="fullmetal-alchemist" >
+          alt="fullmetal-alchemist">
         <p class="att-column-3">Fullmetal Alchemist</p>
         <div class="clearfix"></div>
       </div>
@@ -415,7 +396,7 @@
 
       <div class="att-item">
         <h2 class="att-column-1">6</h2>
-        <img src="homepage/all time trending/img/dragon-ball-z.jpg" class="att-column-2" alt="dragon-ball-z" >
+        <img src="homepage/all time trending/img/dragon-ball-z.jpg" class="att-column-2" alt="dragon-ball-z">
         <p class="att-column-3">Dragon Ball: Z</p>
         <div class="clearfix"></div>
       </div>
@@ -423,14 +404,14 @@
 
       <div class="att-item">
         <h2 class="att-column-1">7</h2>
-        <img src="homepage/all time trending/img/sailor-moon.jpg" class="att-column-2" alt="sailor-moon" >
+        <img src="homepage/all time trending/img/sailor-moon.jpg" class="att-column-2" alt="sailor-moon">
         <p class="att-column-3">Sailor Moon</p>
         <div class="clearfix"></div>
       </div>
 
       <div class="att-item">
         <h2 class="att-column-1">8</h2>
-        <img src="homepage/all time trending/img/one-piece.jpg" class="att-column-2" alt="one-piece" >
+        <img src="homepage/all time trending/img/one-piece.jpg" class="att-column-2" alt="one-piece">
         <p class="att-column-3">One Piece</p>
         <div class="clearfix"></div>
       </div>
@@ -438,7 +419,7 @@
 
       <div class="att-item">
         <h2 class="att-column-1">9</h2>
-        <img src="homepage/all time trending/img/attack-on-titan.jpg" class="att-column-2" alt="attack-on-titan" >
+        <img src="homepage/all time trending/img/attack-on-titan.jpg" class="att-column-2" alt="attack-on-titan">
         <p class="att-column-3">Attack On Titan</p>
         <div class="clearfix"></div>
       </div>
@@ -450,7 +431,7 @@
 
   <footer id="footer">
     <p>
-    <div class="dance-gif"><img src="homepage/eromanga-sensei.gif"></div> &#169; 2024 Animebox. All Rights Reserved.</p>
+    <div class="dance-gif"><img src="homepage/eromanga-sensei.gif" alt="dancing-gif"></div> &#169; 2024 Animebox. All Rights Reserved.</p>
   </footer>
 
 </body>
