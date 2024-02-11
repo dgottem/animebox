@@ -5,8 +5,8 @@
     width: 100%;
     text-align: center;
     margin: 0;
-    position: sticky;
     position: -webkit-sticky;
+    position: sticky;
     z-index: 1000;
     top: 0;
     right: 0;
@@ -63,8 +63,18 @@
     align-items: center;
 }
 
+.user img {
+    width: 16.83px;
+    margin-right: 10%;
+}
+
 .nav-main a:hover {
     color: rgb(141, 10, 255);
+}
+
+.nav-main a:nth-of-type(1) img {
+    width: 16.83px;
+    margin-right: 10%;
 }
 
 #menu-icon {
@@ -93,19 +103,17 @@
 
     .navbar {
         position: fixed;
-        right: -100%;
-        /* Initial position off-screen */
+        right: -100%; /* Initial position off-screen */
         top: 20px;
         width: 270px;
-        height: fit-content;
-        /* Adjust as needed */
+        height: auto;
         background-color: rgba(0, 0, 0, 0.9);
+        -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
         flex-direction: column;
         text-align: left;
         border-radius: 10px;
         transition: right 0.5s ease;
-        /* Add transition property for smooth sliding effect */
     }
 
     .navbar a {
