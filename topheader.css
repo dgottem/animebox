@@ -53,7 +53,14 @@
 }
 
 #menu-icon {
-    font-size: 35px;
+    font-size: 23px;
+    cursor: pointer;
+    z-index: 10000;
+    display: none;
+}
+
+#menu-close-icon {
+    font-size: 27px;
     cursor: pointer;
     z-index: 10000;
     display: none;

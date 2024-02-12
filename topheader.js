@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('.navbar');
 
     menuIcon.addEventListener('click', function () {
-        menuIcon.classList.toggle('bx-x');
+        menuIcon.classList.toggle('fa-xmark');
         navbar.classList.toggle('nav-open');
     });
 
@@ -15,4 +15,5 @@ document.addEventListener('DOMContentLoaded', function () {
         navAccContent.classList.toggle('na-dc-open');
     })
 
+    
 });
