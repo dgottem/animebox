@@ -55,7 +55,7 @@
 #menu-icon {
     font-size: 35px;
     cursor: pointer;
-    z-index: 10003;
+    z-index: 10000;
     display: none;
 }
 
@@ -78,8 +78,7 @@
 
     .navbar {
         position: fixed;
-        right: -100%;
-        /* Initial position off-screen */
+        right: -100%;
         top: 20px;
         width: 270px;
         height: auto;
@@ -90,6 +89,7 @@
         text-align: left;
         border-radius: 10px;
         transition: right 0.5s ease;
+        z-index: 9999;
     }
 
     .navbar a {
@@ -150,6 +150,7 @@
 #bell-icon {
     margin-right: 12px;
     font-size: 18px;
+    z-index: 9000
 }
 
 #bell-icon:hover,
