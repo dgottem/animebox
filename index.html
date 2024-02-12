@@ -16,7 +16,6 @@
   <title>AnimeBox</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <script src="https://kit.fontawesome.com/880f962504.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="homepage/style.css">
@@ -46,8 +45,14 @@
     </ul>
 
     <div class="nav-main">
+      <i class="fa-solid fa-magnifying-glass" id="search-icon_1" title="Search"></i>
 
-      <i class="fa-solid fa-bell" id="bell-icon" title="Notification"></i>
+      <div id="noti-modal-container">
+        <i class="fa-solid fa-bell" id="bell-icon" title="Notification"></i>
+        <div id="noti-modal">
+          <p>There is no notification.</p>
+        </div>
+      </div>
 
       <div class="nav-account">
         <i class="ri-user-fill" id="na-dropdown" title="Account"></i>
@@ -59,14 +64,14 @@
         </div>
       </div>
 
-      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <i class="fa-solid fa-bars" id="menu-icon" title="navigation"></i>
       <i class="fa-solid fa-xmark" id="menu-close-icon"></i>
     </div>
 
   </header>
 
-  <div class="search-box">
-    <input type="search" placeholder=" Search anime" class="s-box"><i class="ri-search-line"></i>
+  <div class="search-box-container">
+    <input type="search" placeholder=" Search anime" class="search-box" id="search-box"><i class="ri-search-line"></i>
   </div>
 
   <div id="spotlight">

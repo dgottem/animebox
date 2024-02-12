@@ -78,7 +78,7 @@
     }
 }
 
-@media (max-width: 1089px) {
+@media (max-width: 1129px) {
     #menu-icon {
         display: block;
     }
@@ -120,13 +120,12 @@
     display: inline-block;
 }
 
-.ri-user-fill {
+#na-dropdown {
     font-size: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
-.ri-user-fill:hover,
-.ri-user-fill:focus {
+#na-dropdown:hover {
     color: rgb(141, 10, 255);
     cursor: pointer;
 }
@@ -134,7 +133,7 @@
 .na-dropdown-content {
     text-align: left;
     position: fixed;
-    z-index: 9998;
+    z-index: 9997;
     background-color: rgba(0, 0, 0, 0.9);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -163,12 +162,87 @@
 }
 
 #bell-icon {
-    margin-right: 13px;
+    margin-right: 20px;
     font-size: 18px;
 }
 
-#bell-icon:hover,
-#bell-icon:focus {
+#bell-icon:hover {
     color: rgb(141, 10, 255);
     cursor: pointer;
+}
+
+#search-icon_1 {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+#search-icon_1:hover {
+    color: rgb(141, 10, 255);
+    cursor: pointer;
+}
+
+@media (min-width: 1130px){
+    .ri-user-fill {
+        margin-right: 13px;
+    }
+
+    #bell-icon {
+        margin-right: 13px;
+    }
+
+    #search-icon_1 {
+        margin-right: 13px;
+    }
+}
+
+#noti-modal {
+    width: 40vw;
+    left: -100%;
+    top: 78px;
+    z-index: 9998;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    display: block;
+    transition: left .3s ease;
+}
+
+#noti-modal p {
+    text-align: left;
+    transition: all .3s ease
+}
+
+@media only screen and (min-width: 0) and (max-width: 768px) {
+    #noti-modal {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    #noti-modal {
+        width: 350px;
+    }
+}
+
+@media (min-width: 1281px){
+    #noti-modal {
+        top: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #noti-modal {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1800px) and  (max-width: 2500px){
+    #noti-modal {
+        width: 400px;
+    }
 }
