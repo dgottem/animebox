@@ -41,6 +41,7 @@ a {
     height: 25px;
     border-radius: 8px;
     width: 100%;
+    z-index: 1001;
 }
 
 .ri-search-line {
@@ -51,6 +52,7 @@ a {
     text-align: right;
     padding-left: 10px;
     padding-right: 10px;
+    z-index: 1001;
 }
 
 .release-box {
