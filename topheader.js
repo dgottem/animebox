@@ -4,23 +4,26 @@ document.addEventListener('DOMContentLoaded', function () {
     const menuIcon = document.getElementById('menu-icon');
     const navbar = document.querySelector('.navbar');
 
-    menuIcon.addEventListener('click', function () {
-        menuIcon.classList.toggle('fa-xmark');
-        navbar.classList.toggle('nav-open');
-    });
-
-
     const navAccIcon = document.getElementById('na-dropdown-icon');
     const navAccContent = document.getElementById('na-dropdown-content');
 
-    navAccIcon.addEventListener('click', function () {
-        navAccContent.classList.toggle('na-dc-open');
-    });
-
     const searchIcon1 = document.getElementById('search-icon_1');
     const searchContainer = document.querySelector('.search-box-container');
-
     const spotlightDiv = document.getElementById('spotlight');
+
+    const bellIcon = document.getElementById('bell-icon');
+    const notiModal = document.getElementById('noti-modal');
+
+    menuIcon.addEventListener('click', function () {
+        menuIcon.classList.toggle('fa-xmark');
+        navbar.classList.toggle('nav-open');
+        closeOtherElements(navAccContent, notiModal);
+    });
+
+    navAccIcon.addEventListener('click', function () {
+        navAccContent.classList.toggle('na-dc-open');
+        closeOtherElements(navbar, notiModal);
+    });
 
     searchIcon1.addEventListener('click', function () {
         const searchContainerCD = window.getComputedStyle(searchContainer).getPropertyValue('display');
@@ -36,15 +39,18 @@ document.addEventListener('DOMContentLoaded', function () {
             spotlightDiv.style.marginTop = 0 + "px";
         }
     });
-    
-
-    const bellIcon = document.getElementById('bell-icon');
-    const notiModal = document.getElementById('noti-modal');
 
     bellIcon.addEventListener("click", function () {
         console.log("Bell icon clicked");
         notiModal.classList.toggle('noti-modal-open');
+        closeOtherElements(navbar, navAccContent);
     });
      
-
+    function closeOtherElements(...elementsToClose) {
+        elementsToClose.forEach(element => {
+            if (element.classList.contains('nav-open') || element.classList.contains('na-dc-open') || element.classList.contains('noti-modal-open')) {
+                element.classList.remove('nav-open', 'na-dc-open', 'noti-modal-open');
+            }
+        });
+    }
 });
