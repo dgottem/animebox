@@ -110,7 +110,7 @@
         color: rgb(141, 10, 255);
     }
 
-    .nav-open {
+    .navbar.nav-open {
         right: 0;
     }
 }
@@ -231,7 +231,6 @@
     border-radius: 5px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 5px;
     display: block;
     transition: left .3s ease;
     position: fixed;
@@ -243,8 +242,8 @@
 }
 
 #noti-modal p {
-    text-align: left;
-    transition: all .3s ease
+    text-align: center;
+    transition: all .3s ease;
 }
 
 @media only screen and (min-width: 0) and (max-width: 768px) {

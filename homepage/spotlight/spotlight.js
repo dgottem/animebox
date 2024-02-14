@@ -1,24 +1,32 @@
 document.addEventListener('DOMContentLoaded', function () {
   let slider = document.querySelector('.slider .list');
   let items = document.querySelectorAll('.slider .list .item');
-  let next = document.getElementById('next');
-  let prev = document.getElementById('prev');
   let dots = document.querySelectorAll('.dots li');
 
   let lengthItems = items.length - 1;
   let active = 0;
 
-  next.onclick = function () {
+  let refreshInterval = setInterval(() => { nextSlide() }, 6000);
+
+  function nextSlide() {
     active = active + 1 <= lengthItems ? active + 1 : 0;
     reloadSlider();
   }
 
-  prev.onclick = function () {
+  function prevSlide() {
     active = active - 1 >= 0 ? active - 1 : lengthItems;
     reloadSlider();
   }
 
-  let refreshInterval = setInterval(() => { next.click() }, 6000);
+  $('.slider').swipe({
+    swipeLeft: function() {
+      nextSlide();
+    },
+    swipeRight: function() {
+      prevSlide();
+    },
+    threshold: 30
+  });
 
   function reloadSlider() {
     slider.style.left = -items[active].offsetLeft + 'px';
@@ -28,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     dots[active].classList.add('active-dot');
 
     clearInterval(refreshInterval);
-    refreshInterval = setInterval(() => { next.click() }, 6000);
+    refreshInterval = setInterval(() => { nextSlide() }, 6000);
   }
 
   dots.forEach((li, key) => {
@@ -44,9 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "ArrowRight") {
-      next.click();
+      nextSlide();
     } else if (event.key === "ArrowLeft") {
-      prev.click();
+      prevSlide();
     }
   });
 });

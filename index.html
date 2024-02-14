@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,12 +20,15 @@
   <script src="https://kit.fontawesome.com/880f962504.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="homepage/style.css">
-  <link rel="stylesheet" href="topheader.css">
+  <link rel="stylesheet" href="topheader/topheader.css">
   <link rel="stylesheet" href="homepage/spotlight/spotlight.css">
 
   <script defer src="homepage/spotlight/spotlight.js"></script>
-  <script defer src="topheader.js"></script>
+  <script defer src="topheader/topheader.js"></script>
   <script src="script.js"></script>
+  <script src="jQuery/jquery-3.7.1.min.js"></script>
+  <script src="jQuery/jquery.touchSwipe.min.js"></script>
+
 </head>
 
 <body>
@@ -53,7 +57,7 @@
       <div id="noti-modal-container">
         <i class="fa-solid fa-bell" id="bell-icon" title="Notification"></i>
         <div id="noti-modal">
-          <p>There is no notification.</p>
+          <p>There is no notification</p>
         </div>
       </div>
 
@@ -106,12 +110,6 @@
           <div class="caption">That Time I Got Reincarnated As A Slime</div>
         </div>
 
-      </div>
-
-      <!-- previous and next buttons -->
-      <div class="buttons">
-        <button type="button" id="prev">&#60;</button>
-        <button type="button" id="next">&#62;</button>
       </div>
 
     </div>
