@@ -40,8 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    bellIcon.addEventListener("click", function () {
-        console.log("Bell icon clicked");
+    bellIcon.addEventListener('click', function () {
         notiModal.classList.toggle('noti-modal-open');
         closeOtherElements(navbar, navAccContent);
     });
