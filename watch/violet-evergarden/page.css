@@ -1,0 +1,13 @@
+.video-content {
+    background-image: url('img/background.jpg');
+}
+
+a:nth-of-type(1) .season-block {
+    background-image: url('img/seasons/season1.jpg');
+    background-position: left;
+}
+
+a:nth-of-type(2) .season-block {
+    background-image: url('img/movies/the-movie\(m1\).jpg');
+    background-position: center;
+}
