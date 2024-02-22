@@ -1,0 +1,11 @@
+.video-content {
+    background-image: url('img/background.webp');
+}
+
+a:nth-of-type(1) .season-block {
+    background-image: url('img/seasons/season1.webp');
+}
+
+a:nth-of-type(2) .season-block {
+    background-image: url('img/seasons/season2.jpg');
+}
