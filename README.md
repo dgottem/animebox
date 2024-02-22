@@ -1,5 +1,5 @@
-Due to financial reasons and inadequate storage, this project won't have videos.
+An amateur programmer's attempt at making an anime website.
 
-Also, I do not want to embed videos with pop-up ads.
+Use an ad-blocker, the are videos non-affiliated third party hosts.
 
-Status: Unfinished (On Hold)
+Status: Unfinished
