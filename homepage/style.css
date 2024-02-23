@@ -14,6 +14,13 @@ body {
     background-color: rgb(5, 5, 5);
 }
 
+@media (min-width: 1400px) {
+    body {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
 #prev,
 #next {
     border: 1px solid dimgrey;
@@ -39,6 +46,7 @@ a {
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 10px;
+    padding-bottom: 0;
 }
 
 .tr-item {
@@ -274,4 +282,28 @@ a {
     width: 1em;
     height: 100%;
     object-fit: contain;
+}
+
+.pagi-set-1,
+.pagi-set-2 {
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-left: 10px;
+}
+
+.pagi-link-1,
+.pagi-link-2 {
+    background-color: #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(35, 0, 66);
+    cursor: pointer;
+}
+
+.active-pagi-1,
+.active-pagi-2 {
+    background-color: rgb(141, 10, 255);
+    color: #fff;
 }
