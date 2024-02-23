@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // Retrieve saved src value from localStorage
-    const savedSrc = localStorage.getItem('episodeSrc');
+    const seriesName = "violet_evergarden";
+    const savedSrc = localStorage.getItem(`${seriesName}_episodeSrc`);
 
     // Set iframe src to saved value if it exists
     if (savedSrc) {
@@ -13,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
         videoFrame.src = src;
 
         // Save src value to localStorage
-        localStorage.setItem('episodeSrc', src);
+        localStorage.setItem(`${seriesName}_episodeSrc`, src);
     }
 
-    let currentEpisode = parseInt(localStorage.getItem('currentEpisode')) || 1; // Initial episode number, defaults to 1 if not found in localStorage
-    const totalEpisodes = 20; // Assuming there are 20 episodes in total
+    let currentEpisode = parseInt(localStorage.getItem(`${seriesName}_currentEpisode`)) || 1; // Initial episode number, defaults to 1 if not found in localStorage
+    const totalEpisodes = 13;
 
     const toPreviousVid = document.getElementById('to-previous-vid');
     const toNextVid = document.getElementById('to-next-vid');
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         link.addEventListener('click', function() {
             const episodeNumber = parseInt(link.getAttribute('data-epnum'));
             currentWatch.textContent = `Episode ${episodeNumber}`;
-            localStorage.setItem('currentEpisode', episodeNumber); // Save current episode number to localStorage
+            localStorage.setItem(`${seriesName}_currentEpisode`, episodeNumber); // Save current episode number to localStorage
         });
     });
 
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (currentEpisode > 1) {
             currentEpisode--;
             currentWatch.textContent = `Episode ${currentEpisode}`;
-            localStorage.setItem('currentEpisode', currentEpisode); // Save current episode number to localStorage
+            localStorage.setItem(`${seriesName}_currentEpisode`, currentEpisode); // Save current episode number to localStorage
             // Simulate click on the anchor tag for the previous episode
             document.querySelector(`.ep-li-item:nth-child(${currentEpisode}) a`).click();
         }
@@ -51,11 +52,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (currentEpisode < totalEpisodes) {
             currentEpisode++;
             currentWatch.textContent = `Episode ${currentEpisode}`;
-            localStorage.setItem('currentEpisode', currentEpisode); // Save current episode number to localStorage
+            localStorage.setItem(`${seriesName}_currentEpisode`, currentEpisode); // Save current episode number to localStorage
             // Simulate click on the anchor tag for the next episode
             document.querySelector(`.ep-li-item:nth-child(${currentEpisode}) a`).click();
         }
     });
-
 
 });
