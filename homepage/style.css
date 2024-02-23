@@ -14,13 +14,6 @@ body {
     background-color: rgb(5, 5, 5);
 }
 
-@media (min-width: 1400px) {
-    body {
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-}
-
 #prev,
 #next {
     border: 1px solid dimgrey;
