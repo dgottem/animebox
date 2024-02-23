@@ -4,10 +4,51 @@
 
 a:nth-of-type(1) .season-block {
     background-image: url('img/seasons/season1.jpg');
-    background-position: left;
+    background-position: center;
 }
 
 a:nth-of-type(2) .season-block {
-    background-image: url('img/movies/the-movie\(m1\).jpg');
+    background-image: url('img/movies/eternity-and-the-auto-memory-doll\(m1\).jpg');
     background-position: center;
+}
+
+a:nth-of-type(3) .season-block {
+    background-image: url('img/movies/the-movie\(m2\).jpg');
+    background-position: center;
+}
+
+.slateblue-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: slateblue;
+    z-index: 20000;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.fa-triangle-exclamation {
+    text-align: center;
+    font-size: 300px;
+}
+
+.slateblue-overlay h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.slateblue-overlay a {
+    color: slateblue;
+    text-decoration: none;
+}
+
+.slateblue-overlay button {
+    color: slateblue;
+    background-color: white;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 15px;
 }
