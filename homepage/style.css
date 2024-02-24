@@ -126,8 +126,7 @@ a {
 }
 
 @media (min-width:1024px) {
-
-    /* Style for the columns */
+
     .home-column1 {
         float: left;
         width: 70%;
@@ -139,8 +138,7 @@ a {
         width: 30%;
         box-sizing: border-box;
     }
-
-    /* Clear the float to prevent issues with following elements */
+
     .clearfix::after {
         content: "";
         clear: both;
