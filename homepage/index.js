@@ -99,15 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     pagiDiv.style.display = 'block';
                 });
             }
-        } else {
-            //executes if session storage isn't supported
-            document.querySelectorAll('.pagi-set-1, .pagi-set-2').forEach(paginationSet => {
-                paginationSet.innerHTML = '';
-            });
-
-            document.querySelectorAll('.tr-item').forEach(pagiDiv => {
-                pagiDiv.style.display = 'block';
-            });
         }
     }
     
