@@ -55,7 +55,7 @@ a {
 
 .tr-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
 }
 
@@ -126,7 +126,8 @@ a {
 }
 
 @media (min-width:1024px) {
-
+
+
     .home-column1 {
         float: left;
         width: 70%;
@@ -138,7 +139,8 @@ a {
         width: 30%;
         box-sizing: border-box;
     }
-
+
+
     .clearfix::after {
         content: "";
         clear: both;
