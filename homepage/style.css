@@ -19,12 +19,7 @@ body {
         margin: 0 auto;
     }
 }
-
-#prev,
-#next {
-    border: 1px solid dimgrey;
-}
-
+
 a {
     color: white;
 }
