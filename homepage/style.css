@@ -6,12 +6,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
-    ;
 }
 
 body {
     color: white;
     background-color: rgb(5, 5, 5);
+}
+
+@media (min-width: 1500px) {
+    body {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
 }
 
 #prev,
@@ -127,7 +133,6 @@ a {
 
 @media (min-width:1024px) {
 
-
     .home-column1 {
         float: left;
         width: 70%;
@@ -139,7 +144,6 @@ a {
         width: 30%;
         box-sizing: border-box;
     }
-
 
     .clearfix::after {
         content: "";
@@ -258,7 +262,7 @@ a {
 #footer {
     display: inline-block;
     text-align: center;
-    background-color: #333;
+    background-color: #222;
     color: #fff;
     text-align: center;
     padding: 10px;
