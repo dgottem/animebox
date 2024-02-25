@@ -93,5 +93,4 @@ document.addEventListener('DOMContentLoaded', function () {
     
     updatePagination();
 
-    window.addEventListener('resize', updatePagination);
 });
