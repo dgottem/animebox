@@ -1,11 +1,9 @@
 body {
-    background-color: #111;
+    background-color: black;
+    border-right: 1px solid #111;
 }
 
-.home-column1 {
-    background-color: #111;
-}
-
+.home-column1,
 .home-column2 {
     background-color: #111;
 }
@@ -240,10 +238,10 @@ a .season-block {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: black;
-    border: 3px solid black;    
-    border-radius: 12px;
+    background-color: black;  
+    border-radius: 8px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .tli-img {
@@ -255,6 +253,7 @@ a .season-block {
     width: 80%;
     text-align: center;
     text-overflow: ellipsis;
+    padding: 0 10px
 }
 
 #spotlight-container {
@@ -267,10 +266,10 @@ a .season-block {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: black;
-    border: 3px solid black;    
-    border-radius: 12px;
+    background-color: black;   
+    border-radius: 8px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .spotlight-list {
@@ -287,6 +286,7 @@ a .season-block {
     width: 80%;
     text-align: center;
     text-overflow: ellipsis;
+    padding: 0 10px
 }
 
 #video-server-notice {
