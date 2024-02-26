@@ -14,12 +14,14 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem(`${seriesName}_episodeSrc`, src);
     }
 
+    let currentEpisode = parseInt(localStorage.getItem(`${seriesName}_currentEpisode`)) || 1;
     const totalEpisodes = 13;
 
     const toPreviousVid = document.getElementById('to-previous-vid');
     const toNextVid = document.getElementById('to-next-vid');
 
     const currentWatch = document.getElementById('current-watch');
+    currentWatch.textContent = `Episode ${currentEpisode}`;
 
     const episodeLinks = document.querySelectorAll('.ep-li-item a');
     episodeLinks.forEach(link => {
