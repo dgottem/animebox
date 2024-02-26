@@ -289,4 +289,13 @@ a .season-block {
     text-overflow: ellipsis;
 }
 
+#video-server-notice {
+    margin-left: 10px;
+}
 
+#video-server-notice p {
+    background-color: black;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+}
