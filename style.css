@@ -22,6 +22,7 @@ body {
 
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -29,8 +30,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(141, 10, 255);
+    background: rgb(94, 5, 172);
     border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(141, 10, 255);
 }
 
 a {
@@ -106,21 +111,30 @@ a {
 
 .see-more-release {
     text-align: center;
+    width: 100%;
     padding-bottom: 20px;
 }
 
 .see-more-button {
-    padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    cursor: pointer;
+    padding: 20px 30px;
     border: 1px solid transparent;
     border-radius: 50px;
     color: rgb(141, 10, 255);
 }
 
 .see-more-button:hover {
-    background-color: rgb(141, 10, 255);
     color: white;
+    background-color: rgb(141, 10, 255);
+}
+
+.see-more-text {
+    font-size: 16px;
+    text-align: left;
+}
+
+.see-more-arrow {
+    text-align: right;
 }
 
 @media (min-width:1024px) {

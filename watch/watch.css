@@ -161,27 +161,30 @@ iframe {
 }
 
 #season-list {
+    padding: 0 10px;
     width: 100%;
-    background-color: #111;
-    padding: 10px;
-    padding-left: 0;
-    max-width: 100%;
-    overflow-x: auto;
+}
+
+#season-block-wrapper {
+    width: 100%;
     display: flex;
+    overflow-x: auto;
+    padding-bottom: 10px;
 }
 
 .season-block {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
     width: 30%;
     padding: 100px;
+    margin-right: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
     border: 2px solid rgb(141, 10, 255);
     border-radius: 5px;
-    margin-left: 10px;
     overflow: hidden;
     filter: grayscale(100%);
     position: relative;
@@ -207,10 +210,9 @@ a .season-block {
     width: 100%;
     text-align: center;
     padding: 5px;
-}
-
-.season-block-num {
-    margin-left: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 #comment-section {
