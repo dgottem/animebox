@@ -91,19 +91,19 @@ a {
     white-space: nowrap;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
     .tr-item {
-        flex: 0 1 calc(33.333%);
+        flex: 0 1 calc(33.3%);
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .tr-item {
         flex: 0 1 calc(25%);
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1400px) {
     .tr-item {
         flex: 0 1 calc(16%);
     }
