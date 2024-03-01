@@ -183,7 +183,7 @@ iframe {
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
-    border: 2px solid rgb(141, 10, 255);
+    border: 2px solid var(--main-color);
     border-radius: 5px;
     overflow: hidden;
     filter: grayscale(100%);

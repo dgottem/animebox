@@ -11,6 +11,8 @@
 body {
     color: white;
     background-color: rgb(5, 5, 5);
+    --main-color: rgb(141, 10, 255);
+    --dark-main-color: rgb(35, 0, 66);
 }
 
 @media (min-width: 1400px) {
@@ -26,7 +28,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(35, 0, 66);
+    background: var(--dark-main-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -35,7 +37,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(141, 10, 255);
+    background: var(--main-color);
 }
 
 a {
@@ -120,12 +122,12 @@ a {
     padding: 20px 30px;
     border: 1px solid transparent;
     border-radius: 50px;
-    color: rgb(141, 10, 255);
+    color: var(--main-color);
 }
 
 .see-more-button:hover {
     color: white;
-    background-color: rgb(141, 10, 255);
+    background-color: var(--main-color);
 }
 
 .see-more-text {
@@ -203,12 +205,12 @@ a {
 }
 
 .att-item:nth-of-type(1) {
-    border-color: rgb(141, 10, 255);
+    border-color: var(--main-color);
 }
 
 .att-item:nth-of-type(1) h2 {
     color: black;
-    text-shadow: -1px -1px 0 rgb(141, 10, 255), 1px -1px 0 rgb(141, 10, 255), -1px 1px 0 rgb(141, 10, 255), 1px 1px 0 rgb(141, 10, 255);
+    text-shadow: -1px -1px 0 var(--main-color), 1px -1px 0 var(--main-color), -1px 1px 0 var(--main-color), 1px 1px 0 var(--main-color);
 }
 
 .att-item:nth-of-type(2) {
@@ -302,12 +304,12 @@ a {
     background-color: #ccc;
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: rgb(35, 0, 66);
+    background-color: var(--dark-main-color);
     cursor: pointer;
 }
 
 .active-pagi-1,
 .active-pagi-2 {
-    background-color: rgb(141, 10, 255);
+    background-color: var(--main-color);
     color: #fff;
 }

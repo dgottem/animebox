@@ -43,7 +43,7 @@
 }
 
 .navbar a:hover {
-    color: rgb(141, 10, 255);
+    color: var(--main-color);
 }
 
 .nav-main {
@@ -107,7 +107,7 @@
     }
 
     .navbar a:hover {
-        color: rgb(141, 10, 255);
+        color: var(--main-color);
     }
 
     .navbar.nav-open {
@@ -126,7 +126,7 @@
 }
 
 #na-dropdown-icon:hover {
-    color: rgb(141, 10, 255);
+    color: var(--main-color);
     cursor: pointer;
 }
 
@@ -167,7 +167,7 @@
 }
 
 #search-icon_1:hover {
-    color: rgb(141, 10, 255);
+    color: var(--main-color);
     cursor: pointer;
 }
 
@@ -221,7 +221,7 @@
 }
 
 #bell-icon:hover {
-    color: rgb(141, 10, 255);
+    color: var(--main-color);
     cursor: pointer;
 }
 
