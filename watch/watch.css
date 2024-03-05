@@ -85,6 +85,7 @@ iframe {
     display: flex;
     flex-direction: row;
     padding: 7px;
+    cursor: pointer;
 }
 
 .ep-li-item:nth-of-type(odd) {
@@ -93,6 +94,13 @@ iframe {
 
 .ep-li-item:nth-of-type(even) {
     background-color: #222;
+}
+
+.ep-li-item:hover,
+.ep-li-item:hover .ep-li-num,
+.ep-li-item:hover .ep-li-title {
+    background-color: gray;
+    color: black;
 }
 
 .ep-li-content {
