@@ -24,7 +24,8 @@
 
   <script defer src="homepage/spotlight/spotlight.js"></script>
   <script defer src="topheader/topheader.js"></script>
-  <script src="script.js"></script>
+  <script defer src="main.js"></script>
+  <script src="script.js"></script> 
   <script src="jQuery/jquery-3.7.1.min.js"></script>
   <script src="jQuery/jquery.touchSwipe.min.js"></script>
 
@@ -40,11 +41,11 @@
       <li><a href="javascrip:void(0)" class="nav-active">Home</a></li>
       <li><a href="javascript:void(0)">Top Release</a></li>
       <li><a href="javascript:void(0)">Newly Updated</a></li>
+      <li><a href="javascript:void(0)">Newly Added</a></li>
       <li><a href="javascript:void(0)">Category</a></li>
       <li><a href="javascript:void(0)">Trending</a></li>
       <li><a href="javascript:void(0)">Ongoing</a></li>
       <li><a href="javascript:void(0)">Completed</a></li>
-      <li><a href="javascript:void(0)">Donate</a></li>
     </ul>
 
     <div class="nav-main">
@@ -367,9 +368,28 @@
   </main>
 
   <footer id="footer">
+
+    <img src="/animebox/logo.png" alt="animebox-logo" id="footer-logo">
+
     <p>
     <div class="dance-gif"><img src="eromanga-sensei.gif" alt="dancing-gif"></div> &#169; 2024 Animebox. All
-    Rights Reserved.</p>
+    Rights Reserved.
+    </p>
+
+    <ul>
+      <li><a>FAQ</a></li>
+      <li><a href="mailto:danielgottem30@gmail.com">Contact</a></li>
+      <li><a>Donate</a></li>
+      <li id="user-request">Request</li>
+    </ul>
+
+    <div class="dark-overlay">
+      <div class="user-request-div">
+        <div class="close-request-div"><i class="fa-solid fa-circle-xmark close-user-request"></i></div>
+        <iframe id="user-request-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSfeXy1twoSyNef6WlDJCbH6FAF1LPEzzpHrzab5-Am8UMZILg/viewform?embedded=true">Request form loading</iframe>
+      </div>
+    </div>
+
   </footer>
 
 </body>
