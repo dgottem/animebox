@@ -78,7 +78,7 @@
     }
 }
 
-@media (max-width: 1129px) {
+@media (max-width: 1147px) {
     #menu-icon {
         display: block;
     }
@@ -197,22 +197,11 @@
     }
 }
 
-
 .search-box {
     border: 1px solid black;
     height: 25px;
     border-radius: 8px;
     width: 100%;
-}
-
-.fa-solid fa-magnifying-glass {
-    float: left;
-    margin-top: 3px;
-    font-size: large;
-    color: white;
-    text-align: right;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 #bell-icon {
