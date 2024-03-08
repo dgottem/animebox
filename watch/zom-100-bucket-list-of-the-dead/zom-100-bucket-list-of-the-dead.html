@@ -25,9 +25,10 @@
     <link rel="stylesheet" href="zom-100-bucket-list-of-the-dead.css">
 
     <script src="/animebox/script.js"></script>
+    <script defer src="/animebox/main.js"></script>
     <script defer src="/animebox/topheader/topheader.js"></script>
     <script defer src="zom-100-bucket-list-of-the-dead.jss"></script>
-
+    <script defer src="/animebox/watch/watch.js"></script>
 
 </head>
 
@@ -154,6 +155,15 @@
                         <p>Status: Completed</p>
                         <p>Episodes: 12</p>
                         <p>Duration: 24 min</p>
+
+                        <div class="ani-desc-plot">
+                            <p>
+                                Akira Tendo, a disillusioned office worker at an exploitative marketing firm, finds himself trapped in a mundane existence until a zombie apocalypse strikes Tokyo. Seeing this as an opportunity to break free from his routine, he creates a bucket list of things to do before turning into a zombie, giving him a newfound sense of purpose. Joined by friends Kencho, Shizuka, and Beatrix, each seeking their own escape from their pasts, they embark on a series of adventures across zombie-infested Japan. Along the way, they encounter other survivors, face personal challenges, and learn the value of friendship and resilience in the face of adversity.
+                            </p>
+                        </div>
+
+                        <p>[see more]</p>
+
                     </div>
 
                 </div>
@@ -276,11 +286,28 @@
     </main>
 
     <footer id="footer">
-        <p>
-        <div class="dance-gif"><img src="/animebox/eromanga-sensei.gif" alt="dancing-gif"></div> &#169; 2024 Animebox.
-        All Rights
-        Reserved.
-        </p>
+
+    <img src="/animebox/logo.png" alt="animebox-logo" id="footer-logo">
+
+    <p>
+    <div class="dance-gif"><img src="/animebox/eromanga-sensei.gif" alt="dancing-gif"></div> &#169; 2024 Animebox. All
+    Rights Reserved.
+    </p>
+
+    <ul>
+      <li><a>FAQ</a></li>
+      <li><a href="mailto:danielgottem30@gmail.com">Contact</a></li>
+      <li><a>Donate</a></li>
+      <li id="user-request">Request</li>
+    </ul>
+
+    <div class="dark-overlay">
+      <div class="user-request-div">
+        <div class="close-request-div"><i class="fa-solid fa-circle-xmark close-user-request"></i></div>
+        <iframe id="user-request-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSfeXy1twoSyNef6WlDJCbH6FAF1LPEzzpHrzab5-Am8UMZILg/viewform?embedded=true">Request form loading</iframe>
+      </div>
+    </div>
+
     </footer>
 
     <script>

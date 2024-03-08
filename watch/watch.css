@@ -164,8 +164,25 @@ iframe {
     color: darkgray;
 }
 
-.ani-desc-status p {
+.ani-desc-status > p {
     margin-top: 2.5%;
+}
+
+.ani-desc-plot {
+    margin-top: 2.5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.ani-plot-toggle {
+    -webkit-line-clamp: initial;
+}
+
+.ani-desc-status > p:last-child {
+    cursor: pointer;
 }
 
 #season-list {
@@ -186,7 +203,7 @@ iframe {
     align-items: center;
     margin: 0;
     width: 30%;
-    padding: 100px;
+    padding: 70px;
     margin-right: 10px;
     background-size: cover;
     background-repeat: no-repeat;
